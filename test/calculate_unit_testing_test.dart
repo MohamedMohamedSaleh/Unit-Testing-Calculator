@@ -18,4 +18,20 @@ void main() {
     ///Assert
     expect(result, expected);
   });
+
+  test("Subtract two numbers if num1 is 4 and num2 is 5 then return -1", () {
+    ///AAA
+
+    ///Arrange
+    final calculator = Calculator();
+    const num1 = 4;
+    const num2 = 5;
+    const expected = -1;
+
+    ///Act
+    final result = calculator.subtract(num1, num2);
+
+    ///Assert
+    expect(result, expected);
+  });
 }
