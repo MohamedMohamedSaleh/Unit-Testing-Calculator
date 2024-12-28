@@ -50,4 +50,20 @@ void main() {
     ///Assert
     expect(result, expected);
   });
+
+  test("Divide two numbers if num1 is 50 and num2 is 5 then return 10", () {
+    ///AAA
+
+    ///Arrange
+    final calculator = Calculator();
+    const num1 = 50;
+    const num2 = 5;
+    const expected = 10;
+
+    ///Act
+    final result = calculator.divide(num1, num2);
+
+    ///Assert
+    expect(result, expected);
+  });
 }
