@@ -42,7 +42,7 @@ void main() {
     final calculator = Calculator();
     const num1 = 4;
     const num2 = 5;
-    const expected = 20;    
+    const expected = 20;
 
     ///Act
     final result = calculator.multiply(num1, num2);
@@ -62,6 +62,22 @@ void main() {
 
     ///Act
     final result = calculator.divide(num1, num2);
+
+    ///Assert
+    expect(result, expected);
+  });
+
+  test("Divide two numbers if num2 is 0 then throw an Exception", () {
+    ///AAA
+
+    ///Arrange
+    final calculator = Calculator();
+    const num1 = 50;
+    const num2 = 0;
+    final expected = throwsA(isA<Exception>());
+
+    ///Act
+    result() => calculator.divide(num1, num2);
 
     ///Assert
     expect(result, expected);
