@@ -34,4 +34,20 @@ void main() {
     ///Assert
     expect(result, expected);
   });
+
+  test("Multiply two numbers if num1 is 4 and num2 is 5 then return 20", () {
+    ///AAA
+
+    ///Arrange
+    final calculator = Calculator();
+    const num1 = 4;
+    const num2 = 5;
+    const expected = 20;    
+
+    ///Act
+    final result = calculator.multiply(num1, num2);
+
+    ///Assert
+    expect(result, expected);
+  });
 }
